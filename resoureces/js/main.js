@@ -1,9 +1,11 @@
 $(function(){
     $('#header>.nav_wrapper>.gnb>ul>li').mouseenter(function(){
         $('.gnb_bg').css("display","block");
+        $('.sub_menu_wrap').css("borderTop","1px solid #e2e2e2");
     });
     $('#header>.nav_wrapper>.gnb>ul>li').mouseleave(function(){
         $('.gnb_bg').css("display","none");
+        $(".sub_menu_wrap").css("borderTop","none");
     });
 });
 
@@ -17,7 +19,7 @@ $(function(){
 //     });
 // });
 $(function(){
-    $('.gnb>ul>li:nth-child(1)>a').mouseenter(function(){
+    $('.gnb>ul>li:nth-child(1)').mouseenter(function(){
         $('.sub_menu_wrap .sub_nav_calamity').css("display","flex");
     });
     $('.gnb>ul>li:nth-child(1)').mouseleave(function(){
